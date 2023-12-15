@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-
 import { RapidApi } from '@env';
 const Rapid = RapidApi;
 const useFetch = (endpoint, query) => {
