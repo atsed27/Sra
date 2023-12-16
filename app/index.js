@@ -1,6 +1,6 @@
 import { View, Text, SafeAreaView, ScrollView } from 'react-native';
 import { COLORS, SIZES, icons, images } from '../constants';
-import { Stack } from 'expo-router';
+import { Stack, useRouter } from 'expo-router';
 import ScreenHeaderBtn from '../components/common/header/ScreenHeaderBtn';
 import Welcome from '../components/home/welcome/Welcome';
 import Popularjobs from '../components/home/popular/Popularjobs';
@@ -8,6 +8,7 @@ import Nearbyjobs from '../components/home/nearby/Nearbyjobs';
 import { useState } from 'react';
 
 const Home = () => {
+  const router = useRouter();
   const [searchTerm, setSearchTerm] = useState('');
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
