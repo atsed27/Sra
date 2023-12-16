@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { RapidApi } from '@env';
-const Rapid = RapidApi;
+import { RapidApi2 } from '@env';
+const Rapid = RapidApi2;
 const useFetch = (endpoint, query) => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
